@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Find the View that shows the sonidos category
-        TextView sonidos = (TextView) findViewById(R.id.sonidos);
+        TextView sonidos = (TextView) findViewById(R.id.listado_sonidos);
 
         // Set a click listener on that View
         sonidos.setOnClickListener(new View.OnClickListener() {
@@ -86,19 +86,19 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        // Find the View that shows the museo category
-        TextView museo = (TextView) findViewById(R.id.museo);
+        // Find the View that shows the vidrieras category
+        TextView vidrieras = (TextView) findViewById(R.id.vidrieras);
 
         // Set a click listener on that View
-        museo.setOnClickListener(new View.OnClickListener() {
+        vidrieras.setOnClickListener(new View.OnClickListener() {
 
             // The code in this method will be executed when the museo View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent museoIntent = new Intent(MainActivity.this, MuseoActivity.class);
+                Intent vidrierasIntent = new Intent(MainActivity.this, VidrierasActivity.class);
 
                 // Start the new activity
-                startActivity(museoIntent);
+                startActivity(vidrierasIntent);
 
             }
 

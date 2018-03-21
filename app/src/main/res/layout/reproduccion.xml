@@ -4,11 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
         android:adjustViewBounds="true"
+        android:layout_marginTop="40dp"
         android:src="@drawable/detalle_reproduccion" />
 
     <ImageButton
@@ -29,7 +31,16 @@
         android:layout_marginLeft="182dp"
         android:src="@drawable/ic_pause_circle_filled_white_24dp"
        />
-
+    <TextView
+        android:id="@+id/dames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#004D40"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:text="Les Dames de Cerdanyola"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
 
 
 </RelativeLayout>

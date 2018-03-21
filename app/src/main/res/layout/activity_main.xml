@@ -4,9 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.musicstructureapp.MainActivity">
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,7 +14,7 @@
             android:id="@+id/dames"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#039BE5"
+            android:background="#004D40"
             android:gravity="center_vertical"
             android:padding="20dp"
             android:text="Les Dames de Cerdanyola"
@@ -25,13 +23,13 @@
 
 
         <TextView
-            android:id="@+id/sonidos"
+            android:id="@+id/listado_sonidos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FBC02D"
+            android:background="#00695C"
             android:gravity="center_vertical"
             android:padding="20dp"
-            android:text="Listado de sonidos"
+            android:text="Llistat de sons"
             android:textColor="@android:color/white"
             android:textSize="20sp" />
 
@@ -39,10 +37,10 @@
             android:id="@+id/proyecto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#00C853"
+            android:background="#00796B"
             android:gravity="center_vertical"
             android:padding="20dp"
-            android:text="Descripción del proyecto"
+            android:text="Descripció del projecte"
             android:textColor="@android:color/white"
             android:textSize="20sp" />
 
@@ -50,21 +48,21 @@
             android:id="@+id/bruforrellad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FF9800"
+            android:background="#00897B"
             android:gravity="center_vertical"
             android:padding="20dp"
-            android:text="Artistas: Bru/Forrellad"
+            android:text="Artistes: Bru/Forrellad"
             android:textColor="@android:color/white"
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/museo"
+            android:id="@+id/vidrieras"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#EF9A9A"
+            android:background="#009688"
             android:gravity="center_vertical"
             android:padding="20dp"
-            android:text="Sobre el museo"
+            android:text="Sobre els vitralls"
             android:textColor="@android:color/white"
             android:textSize="20sp" />
 
@@ -75,5 +73,4 @@
             android:src="@drawable/detalle"
             android:adjustViewBounds="true" />
     </LinearLayout>
-</RelativeLayout>
 </ScrollView>

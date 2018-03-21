@@ -28,11 +28,11 @@ public class SoundsAdapter extends ArrayAdapter<Sounds> {
      * Create a new {@link SoundsAdapter} object.
      *
      * @param context         is the current context (i.e. Activity) that the adapter is being created in.
-     * @param words           is the list of {@link Sounds}s to be displayed.
+     * @param sounds           is the list of {@link Sounds}s to be displayed.
      * @param colorResourceId is the resource ID for the background color for this list of words
      */
-    public SoundsAdapter(Context context, ArrayList<Sounds> words, int colorResourceId) {
-        super(context, 0, words);
+    public SoundsAdapter(Context context, ArrayList<Sounds> sounds, int colorResourceId) {
+        super(context, 0, sounds);
         mColorResourceId = colorResourceId;
     }
 
@@ -45,32 +45,31 @@ public class SoundsAdapter extends ArrayAdapter<Sounds> {
                     R.layout.list_item, parent, false);
         }
 
-        // Get the {@link AndroidFlavor} object located at this position in the list
-        Sounds currentWord = getItem(position);
+        // Get the {@link Sounds} object located at this position in the list
+        Sounds currentSounds = getItem(position);
 
         //Catalan part
-//TODO cambiar desde aqui
+
         // Find the TextView in the list_item.xml layout with the catalan text
 
-        TextView miwokTextView = (TextView) listItemView.findViewById(R.id.catalan);
+        TextView catalanTextView = (TextView) listItemView.findViewById(R.id.catalan);
 
         // Get the version number from the current AndroidFlavor object and
         // set this text on the number TextView
-        miwokTextView.setText(currentWord.getmCatalan());
+        catalanTextView.setText(currentSounds.getmCatalan());
 
 
-        // Default part
+        // English part
 
-        // Find the TextView in the list_item.xml layout with the castellano text
+        // Find the TextView in the list_item.xml layout with the english text
 
-        TextView defaultTextView = (TextView) listItemView.findViewById(R.id.castellano);
+        TextView englishTextView = (TextView) listItemView.findViewById(R.id.ingles);
 
         // Get the version name from the current AndroidFlavor object and
         // set this text on the name TextView
-        defaultTextView.setText(currentWord.getmCastellano());
+        englishTextView.setText(currentSounds.getmIngles());
 
         //Image part
-
 
         // Find the Image in the list_item.xml layout with the ID image
 
@@ -78,8 +77,8 @@ public class SoundsAdapter extends ArrayAdapter<Sounds> {
 
         // Check if an image is provided for this word or not
 
-        if (currentWord.hasImage()) {
-            imageView.setImageResource(currentWord.getmImageResourceId());
+        if (currentSounds.hasImage()) {
+            imageView.setImageResource(currentSounds.getmImageResourceId());
 
             imageView.setVisibility(View.VISIBLE);
         } else imageView.setVisibility(View.GONE);

@@ -20,7 +20,7 @@
         <activity android:name=".DamesActivity">Dames</activity>
         <activity android:name=".SonidosActivity">Sonidos</activity>
         <activity android:name=".ProyectoActivity">Proyecto</activity>
-        <activity android:name=".MuseoActivity">Museo</activity>
+        <activity android:name=".VidrierasActivity">Vidrieras</activity>
         <activity android:name=".ArtistsActivity">Artistas</activity>
     </application>
 

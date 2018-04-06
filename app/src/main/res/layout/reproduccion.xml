@@ -1,46 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="fitXY"
         android:adjustViewBounds="true"
-        android:layout_marginTop="40dp"
+        android:scaleType="fitXY"
         android:src="@drawable/detalle_reproduccion" />
 
     <ImageButton
         android:id="@+id/play"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#00000000"
-        android:layout_marginTop="270dp"
-        android:layout_marginLeft="170dp"
+        android:layout_marginLeft="@dimen/marginLeft_play_repro"
+        android:layout_marginTop="@dimen/marginTop_play_repro"
+        android:background="@color/background_play_repro"
         android:src="@drawable/ic_play_circle_filled_white_24dp" />
 
     <ImageButton
         android:id="@+id/pause"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#00000000"
-        android:layout_marginTop="370dp"
-        android:layout_marginLeft="182dp"
-        android:src="@drawable/ic_pause_circle_filled_white_24dp"
-       />
-    <TextView
-        android:id="@+id/dames"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#004D40"
-        android:gravity="center_vertical"
-        android:padding="20dp"
-        android:text="Les Dames de Cerdanyola"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"/>
-
+        android:layout_marginLeft="@dimen/marginLeft_pause_repro"
+        android:layout_marginTop="@dimen/marginTop_pause_repro"
+        android:background="@color/background__pause_repro"
+        android:src="@drawable/ic_pause_circle_filled_white_24dp" />
 
 </RelativeLayout>

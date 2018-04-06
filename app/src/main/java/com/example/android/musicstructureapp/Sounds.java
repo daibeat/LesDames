@@ -1,5 +1,6 @@
 package com.example.android.musicstructureapp;
 
+
 /**
  * Created by davidchazarrabru on 15/3/18. This @link Sounds, contains the catalan and english
  * version of the sounds
@@ -7,51 +8,42 @@ package com.example.android.musicstructureapp;
 
 public class Sounds {
 
-
-
-    /** Miwok translation for the word */
+    /**
+     * Catalan translation for the word
+     */
 
     private String mCatalan;
 
-    /** Default translation for the word */
+    /**
+     * English translation for the word
+     */
 
     private String mIngles;
 
-    /** Image resource ID for the word */
+    /**
+     * Image resource ID for the word
+     */
 
     private int mImageResourceId = NO_IMAGE_PROVIDED;
 
-    /** Constant value that represents no image was provided for this word */
+    /**
+     * Constant value that represents no image was provided for this word
+     */
 
     private static final int NO_IMAGE_PROVIDED = -1;
 
-    /** Audio resource ID for the word */
+    /**
+     * Audio resource ID for the word
+     */
 
     private int mAudioResourceId;
 
-
     /**
      * Create a new Word object.
      *
-     * @param catalan is the sound name in catalan
-     * @param ingles is the sound name in english
-     * @param audioResourceId is the audio resource for the words
-     */
-    public Sounds (String catalan, String ingles, int audioResourceId) {
-        mCatalan = catalan;
-        mIngles = ingles;
-        mAudioResourceId = audioResourceId;
-    }
-
-    /**
-     * Create a new Word object.
-     *
-     * @param catalan is the word in catalan
-     *
-     * @param ingles is the word in english language
-     *
+     * @param catalan         is the word in catalan
+     * @param ingles          is the word in english language
      * @param imageResourceId is the drawable resource for the image asset
-     *
      * @param audioResourceId is the audio resource for the words
      */
 
@@ -61,8 +53,6 @@ public class Sounds {
         mImageResourceId = imageResourceId;
         mAudioResourceId = audioResourceId;
     }
-
-
 
     /**
      * Get the catalan translation of the word.
@@ -78,6 +68,7 @@ public class Sounds {
     public String getmIngles() {
         return mIngles;
     }
+
     /**
      * Return the image resource ID of the word.
      */
@@ -85,17 +76,20 @@ public class Sounds {
 
         return mImageResourceId;
     }
+
     /**
      * Return wether or not there is an image for this word.
      */
-    public boolean hasImage(){
+    public boolean hasImage() {
 
         return mImageResourceId != NO_IMAGE_PROVIDED;
     }
+
     /**
      * Return sounds for the words and phrases.
-     *
      */
-    public int getAudioResourceId(){return mAudioResourceId;}
+    public int getAudioResourceId() {
+        return mAudioResourceId;
+    }
 
 }

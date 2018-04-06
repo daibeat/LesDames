@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white">
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -13,76 +13,75 @@
             android:id="@+id/david"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#004D40"
-            android:text="David Bru"
-            android:textSize="20sp"
-            android:padding="16dp"
+            android:background="@color/darkgreen_davidartist"
+            android:padding="@dimen/padding_text_davidArtist"
+            android:text="@string/davidbru_artist"
             android:textColor="@android:color/white"
-            />
+            android:textSize="@dimen/david_textSize_artist" />
 
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp">
+            android:layout_margin="@dimen/david_frame_artist">
+
             <TextView
                 android:id="@+id/texto_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/background_davidtext"
+                android:padding="@dimen/padding_davidText"
                 android:text="@string/david_bru_descripcion"
-                android:background="#009688"
-                android:textSize="17sp"
-                android:padding="20dp"
                 android:textColor="@android:color/white"
-                />
+                android:textSize="@dimen/david_textDescription" />
         </FrameLayout>
+
         <TextView
             android:id="@+id/web_david"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="www.davidbru.com"
             android:layout_gravity="center"
-            android:paddingBottom="16dp"
-            android:textSize="17sp"
-            android:textColor="#004D40"
-           />
-
+            android:paddingBottom="@dimen/padding_davidweb"
+            android:text="@string/davidweb"
+            android:textColor="@color/textColor_davidWeb"
+            android:textSize="@dimen/textSize_davidWeb"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/alfons"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Alfons Forrellad"
-            android:background="#004D40"
-            android:textSize="20sp"
-            android:padding="20dp"
+            android:background="@color/background_alfons"
+            android:padding="@dimen/padding_alfons"
+            android:text="@string/alfons_forrellad"
             android:textColor="@android:color/white"
-            />
+            android:textSize="@dimen/textSize_alfons" />
+
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp">
+            android:layout_margin="@dimen/frame_alfonsArtist">
+
             <TextView
                 android:id="@+id/texto_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/background_textView_alfons"
+                android:padding="@dimen/padding_alfonsDescription"
                 android:text="@string/afons_forrellad_descripcion"
-                android:textSize="17sp"
-                android:padding="16dp"
-                android:background="#009688"
                 android:textColor="@android:color/white"
-                />
+                android:textSize="@dimen/textSize_alfons_desc" />
+
         </FrameLayout>
 
         <TextView
             android:id="@+id/web_alfons"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="www.alfonsforrellad.com"
             android:layout_gravity="center"
-            android:paddingBottom="16dp"
-            android:textColor="#004D40"
-            android:textSize="17sp"
-
-            />
+            android:paddingBottom="@dimen/padding_alfonsWeb"
+            android:text="@string/alfonsweb"
+            android:textColor="@color/textColor_alfonsWeb"
+            android:textSize="@dimen/textSize_alfonsWeb"
+            android:textStyle="bold" />
     </LinearLayout>
 </ScrollView>

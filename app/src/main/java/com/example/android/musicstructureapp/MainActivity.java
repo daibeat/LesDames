@@ -23,11 +23,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Create a new intent to open the {@link DamesActivity}
-                Intent damesIntent = new Intent(MainActivity.this, DamesActivity.class);
+                Intent damesIntent = new Intent(MainActivity.this,
+                        DamesActivity.class);
 
                 // Start the new activity
                 startActivity(damesIntent);
-
             }
 
         });
@@ -41,13 +41,12 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the sonidos View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent sonidosIntent = new Intent(MainActivity.this, SonidosActivity.class);
+                Intent sonidosIntent = new Intent(MainActivity.this,
+                        SonidosActivity.class);
 
                 // Start the new activity
                 startActivity(sonidosIntent);
-
             }
-
         });
 
         // Find the View that shows the proyecto category
@@ -59,13 +58,12 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the proyecto View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent proyectoIntent = new Intent(MainActivity.this, ProyectoActivity.class);
+                Intent proyectoIntent = new Intent(MainActivity.this,
+                        ProyectoActivity.class);
 
                 // Start the new activity
                 startActivity(proyectoIntent);
-
             }
-
         });
 
         // Find the View that shows the bruforrellad category
@@ -77,13 +75,12 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the artistas View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent bruforrelladIntent = new Intent(MainActivity.this,ArtistsActivity.class);
+                Intent bruforrelladIntent = new Intent(MainActivity.this,
+                        ArtistsActivity.class);
 
                 // Start the new activity
                 startActivity(bruforrelladIntent);
-
             }
-
         });
 
         // Find the View that shows the vidrieras category
@@ -95,13 +92,12 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the museo View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent vidrierasIntent = new Intent(MainActivity.this, VidrierasActivity.class);
+                Intent vidrierasIntent = new Intent(MainActivity.this,
+                        VidrierasActivity.class);
 
                 // Start the new activity
                 startActivity(vidrierasIntent);
-
             }
-
         });
 
     }

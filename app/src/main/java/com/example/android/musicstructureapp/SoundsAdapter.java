@@ -23,13 +23,13 @@ public class SoundsAdapter extends ArrayAdapter<Sounds> {
      */
     private int mColorResourceId;
 
-
     /**
      * Create a new {@link SoundsAdapter} object.
      *
-     * @param context         is the current context (i.e. Activity) that the adapter is being created in.
-     * @param sounds           is the list of {@link Sounds}s to be displayed.
-     * @param colorResourceId is the resource ID for the background color for this list of words
+     * @param context         is the current context (i.e. Activity) that the adapter is being
+     *                        created in.
+     * @param sounds          is the list of {@link Sounds}s to be displayed.
+     * @param colorResourceId color
      */
     public SoundsAdapter(Context context, ArrayList<Sounds> sounds, int colorResourceId) {
         super(context, 0, sounds);
@@ -58,7 +58,6 @@ public class SoundsAdapter extends ArrayAdapter<Sounds> {
         // set this text on the number TextView
         catalanTextView.setText(currentSounds.getmCatalan());
 
-
         // English part
 
         // Find the TextView in the list_item.xml layout with the english text
@@ -73,7 +72,7 @@ public class SoundsAdapter extends ArrayAdapter<Sounds> {
 
         // Find the Image in the list_item.xml layout with the ID image
 
-        ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
+        ImageView imageView = (ImageView) listItemView.findViewById(R.id.imagen);
 
         // Check if an image is provided for this word or not
 
@@ -83,6 +82,7 @@ public class SoundsAdapter extends ArrayAdapter<Sounds> {
             imageView.setVisibility(View.VISIBLE);
         } else imageView.setVisibility(View.GONE);
 
+
         // Set the theme color for the list item
         View textContainer = listItemView.findViewById(R.id.text_container);
         // Find the color that the resource ID maps to
@@ -90,12 +90,10 @@ public class SoundsAdapter extends ArrayAdapter<Sounds> {
         // Set the background color of the text container View
         textContainer.setBackgroundColor(color);
 
-
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView
 
         return listItemView;
-
     }
 }
 

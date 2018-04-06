@@ -1,46 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="@dimen/height_list_item"
+    android:minHeight="@dimen/minHeight_list_item">
 
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="@dimen/width_image_list_item"
+        android:layout_height="@dimen/height_image_list_item"
+        android:scaleType="centerCrop" />
 
-        <ImageView
-            android:id="@+id/image"
-            android:layout_width="88dp"
-            android:layout_height="88dp"
-            />
-        <LinearLayout
-            android:id="@+id/text_container"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingLeft="16dp"
-            android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_relative_list_item"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/imagen"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_relative_list_item">
+
 
         <TextView
             android:id="@+id/catalan"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:paddingTop="14dp"
+            android:layout_height="@dimen/height_catalan_list_item"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin_text_list_item"
             android:gravity="top"
+            android:paddingTop="@dimen/padding_text_list_item"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@android:color/white"
-            tools:text="one" />
+            tools:text="@string/tools_catalan_list_item" />
+
         <TextView
             android:id="@+id/ingles"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="@dimen/height_ingles_list_item"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin_ingles_list_item"
             android:gravity="top"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@android:color/white"
             android:textStyle="italic"
-            tools:text="one" />
-    </LinearLayout>
+            tools:text="@string/tools_ingles_list_item" />
 
-    </LinearLayout>
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="@dimen/width_play_list_item"
+            android:layout_height="@dimen/height_play_list_item"
+            android:layout_alignEnd="@+id/catalan"
+            android:layout_alignRight="@+id/catalan"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/marginEnd_play_list_item"
+            android:layout_marginRight="@dimen/marginRight_play_list_item"
+            android:src="@drawable/ic_play_arrow_white_24dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
 
 
 

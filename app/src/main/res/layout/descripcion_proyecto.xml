@@ -9,35 +9,22 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-
-        <TextView
-            android:id="@+id/david"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#004D40"
-            android:padding="20dp"
-            android:text="Descripción del proyecto"
-            android:textColor="@android:color/white"
-            android:textSize="20sp" />
-
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp">
+            android:layout_margin="@dimen/margin_frame_desc_page">
 
             <TextView
                 android:id="@+id/texto_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#009688"
-                android:padding="20dp"
+                android:background="@color/background_textdesc_page"
+                android:padding="@dimen/padding_textdesc_page"
                 android:text="@string/texto_proyecto"
                 android:textColor="@android:color/white"
-                android:textSize="18sp" />
+                android:textSize="@dimen/textSize_textdesc_page" />
         </FrameLayout>
 
-
     </LinearLayout>
-
 
 </ScrollView>

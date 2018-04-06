@@ -4,8 +4,10 @@
     android:id="@+id/list"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.musicstructureapp.SonidosActivity">
-
+    tools:context="com.example.android.musicstructureapp.SonidosActivity"
+    android:drawSelectorOnTop="true"
+    android:divider="@color/divider_line_sounds"
+    android:dividerHeight="@dimen/divider_line_thick_sounds">
 
 </ListView>
 

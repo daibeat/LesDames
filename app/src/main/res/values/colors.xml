@@ -3,6 +3,39 @@
     <color name="colorPrimary">#153016</color>
     <color name="colorPrimaryDark">#153016</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="category_sonidos">#009688</color>
+    <color name="sonido_1">#00695C</color>
+    <color name="sonido_2">#004D40</color>
+    <color name="sonido_3">#00695C</color>
+    <color name="sonido_4">#00796B</color>
+    <color name="sonido_5">#00897B</color>
+    <color name="sonido_6">#009688</color>
+    <color name="sonido_7">#26A69A</color>
+    <color name="sonido_8">#009688</color>
+    <color name="sonido_9">#00897B</color>
+    <color name="sonido_10">#00796B</color>
+    <color name="sonido_11">#00695C</color>
+    <color name="sonido_12">#004D40</color>
+    <color name="category_sonidos">#004D40</color>
+    <color name="darkgreen_davidartist">#004D40</color>
+    <color name="background_davidtext">#009688</color>
+    <color name="textColor_davidWeb">#004D40</color>
+    <color name="background_alfons">#004D40</color>
+    <color name="background_textView_alfons">#009688</color>
+    <color name="textColor_alfonsWeb">#004D40</color>
+    <color name="background_dames_main">#004D40</color>
+    <color name="background_sonidos_main">#00695C</color>
+    <color name="background_descripcion_main">#00796B</color>
+    <color name="background_artistas_main">#00897B</color>
+    <color name="background_vitralls_main">#009688</color>
+    <color name="background_vitrallsText">#004D40</color>
+    <color name="background_vitrallsDesc_page">#009688</color>
+    <color name="textColor_link_museo">#004D40</color>
+    <color name="background_desc_page">#004D40</color>
+    <color name="background_textdesc_page">#009688</color>
+    <color name="background_play_repro">#00000000</color>
+    <color name="background__pause_repro">#00000000</color>
+    <color name="dames_page">#004D40</color>
+    <color name="divider_line_sounds">#000000</color>
+
 
 </resources>

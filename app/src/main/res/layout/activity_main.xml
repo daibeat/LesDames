@@ -10,67 +10,96 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/dames"
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#004D40"
-            android:gravity="center_vertical"
-            android:padding="20dp"
-            android:text="Les Dames de Cerdanyola"
-            android:textColor="@android:color/white"
-            android:textSize="20sp"/>
+            android:background="@color/background_dames_main">
 
+            <TextView
+                android:id="@+id/dames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_dames_main"
+                android:text="@string/Dames_main"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize_dames_main" />
+        </FrameLayout>
 
-        <TextView
-            android:id="@+id/listado_sonidos"
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#00695C"
-            android:gravity="center_vertical"
-            android:padding="20dp"
-            android:text="Llistat de sons"
-            android:textColor="@android:color/white"
-            android:textSize="20sp" />
+            android:background="@color/background_sonidos_main">
 
-        <TextView
-            android:id="@+id/proyecto"
+            <TextView
+                android:id="@+id/listado_sonidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_sonidos_main"
+                android:text="@string/llistat_de_sons"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize_sonidos_main" />
+        </FrameLayout>
+
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#00796B"
-            android:gravity="center_vertical"
-            android:padding="20dp"
-            android:text="Descripció del projecte"
-            android:textColor="@android:color/white"
-            android:textSize="20sp" />
+            android:background="@color/background_descripcion_main">
 
-        <TextView
-            android:id="@+id/bruforrellad"
+            <TextView
+                android:id="@+id/proyecto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_descripcion_main"
+                android:text="@string/descripcion_del_projecte"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize_descripcion_main" />
+        </FrameLayout>
+
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#00897B"
-            android:gravity="center_vertical"
-            android:padding="20dp"
-            android:text="Artistes: Bru/Forrellad"
-            android:textColor="@android:color/white"
-            android:textSize="20sp" />
+            android:background="@color/background_artistas_main">
 
-        <TextView
-            android:id="@+id/vidrieras"
+            <TextView
+                android:id="@+id/bruforrellad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_artistas_main"
+                android:text="@string/artistes_bru_forrellad"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize_artistas_main" />
+        </FrameLayout>
+
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#009688"
-            android:gravity="center_vertical"
-            android:padding="20dp"
-            android:text="Sobre els vitralls"
-            android:textColor="@android:color/white"
-            android:textSize="20sp" />
+            android:background="@color/background_vitralls_main">
+
+            <TextView
+                android:id="@+id/vidrieras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_vitralls_main"
+                android:text="Sobre els vitralls"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize_vitralls_main" />
+        </FrameLayout>
 
         <ImageView
             android:id="@+id/detalle"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/detalle"
-            android:adjustViewBounds="true" />
+            android:adjustViewBounds="true"
+            android:src="@drawable/detalle" />
     </LinearLayout>
 </ScrollView>

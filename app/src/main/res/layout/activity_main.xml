@@ -17,14 +17,8 @@
 
             <TextView
                 android:id="@+id/dames"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground"
-                android:gravity="center_vertical"
-                android:padding="@dimen/padding_dames_main"
                 android:text="@string/Dames_main"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/textSize_dames_main" />
+                style="@style/MainStyle"/>
         </FrameLayout>
 
         <FrameLayout
@@ -34,14 +28,8 @@
 
             <TextView
                 android:id="@+id/listado_sonidos"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground"
-                android:gravity="center_vertical"
-                android:padding="@dimen/padding_sonidos_main"
                 android:text="@string/llistat_de_sons"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/textSize_sonidos_main" />
+                style="@style/MainStyle"/>
         </FrameLayout>
 
         <FrameLayout
@@ -51,14 +39,8 @@
 
             <TextView
                 android:id="@+id/proyecto"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground"
-                android:gravity="center_vertical"
-                android:padding="@dimen/padding_descripcion_main"
                 android:text="@string/descripcion_del_projecte"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/textSize_descripcion_main" />
+                style="@style/MainStyle"/>
         </FrameLayout>
 
         <FrameLayout
@@ -68,14 +50,8 @@
 
             <TextView
                 android:id="@+id/bruforrellad"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground"
-                android:gravity="center_vertical"
-                android:padding="@dimen/padding_artistas_main"
                 android:text="@string/artistes_bru_forrellad"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/textSize_artistas_main" />
+                style="@style/MainStyle"/>
         </FrameLayout>
 
         <FrameLayout
@@ -85,14 +61,8 @@
 
             <TextView
                 android:id="@+id/vidrieras"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground"
-                android:gravity="center_vertical"
-                android:padding="@dimen/padding_vitralls_main"
                 android:text="Sobre els vitralls"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/textSize_vitralls_main" />
+                style="@style/MainStyle"/>
         </FrameLayout>
 
         <ImageView

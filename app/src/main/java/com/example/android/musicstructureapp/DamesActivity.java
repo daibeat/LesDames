@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import java.util.Set;
+
 public class DamesActivity extends AppCompatActivity {
 
     /**
@@ -62,9 +64,12 @@ public class DamesActivity extends AppCompatActivity {
             // because we no longer need it.
             mMediaPlayer.release();
 
-            // Set the media player back to null. For our code, we've decided that
-            // setting the media player to null is an easy way to tell that the media player
-            // is not configured to play an audio file at the moment.
+            /**
+             * Set the media player back to null. For our code, we've decided that
+             * setting the media player to null is an easy way to tell that the media player
+             * is not configured to play an audio file at the moment.
+             */
+
             mMediaPlayer = null;
         }
     }

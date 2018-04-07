@@ -18,6 +18,7 @@ import android.widget.Toast;
 import org.w3c.dom.Text;
 
 import java.util.ArrayList;
+import java.util.Set;
 
 /**
  * Created by davidchazarrabru on 16/3/18.
@@ -79,25 +80,30 @@ public class SonidosActivity extends AppCompatActivity {
         sounds.add(new Sounds(getString(R.string.tormenta), getString(R.string.storm),
                 R.drawable.dames_rep,
                 R.raw.lago));
-
-        // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
-        // adapter knows how to create layouts for each item in the list, using the
-        // list_item.xml layout resource defined in the Android framework.
-        // This list item layout contains a single {@link TextView}, which the adapter will set to
-        // display a single word.
+         /**
+         *Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
+         *adapter knows how to create layouts for each item in the list, using the
+         *list_item.xml layout resource defined in the Android framework.
+         *This list item layout contains a single {@link TextView}, which the adapter will set to
+         *display a single word.
+          */
 
         SoundsAdapter adapter = new SoundsAdapter(this, sounds, R.color.category_sonidos);
 
-        // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
-        // There should be a {@link ListView} with the view ID called list, which is declared in the
-        // activity_sonidos layout file.
+        /**
+         * Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
+         * There should be a {@link ListView} with the view ID called list, which is declared in the
+         * activity_sonidos layout file.
+         * */
 
         ListView listView = (ListView) findViewById(R.id.list);
 
-        // Make the {@link ListView} use the {@link ArrayAdapter} we created above, so that the
-        // {@link ListView} will display list items for each sound in the list of sounds.
-        // Do this by calling the setAdapter method on the {@link ListView} object and pass in
-        // 1 argument, which is the {@link ArrayAdapter} with the variable name itemsAdapter.
+        /**
+         *Make the {@link ListView} use the {@link ArrayAdapter} we created above, so that the
+         *{@link ListView} will display list items for each sound in the list of sounds.
+         *Do this by calling the setAdapter method on the {@link ListView} object and pass in
+         *1 argument, which is the {@link ArrayAdapter} with the variable name itemsAdapter.
+         */
 
         listView.setAdapter(adapter);
 
@@ -132,8 +138,9 @@ public class SonidosActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
-        // When the activity is stopped, release the media player resources because we won't
-        // be playing any more sounds.
+        /** When the activity is stopped, release the media player resources because we won't
+         * be playing any more sounds.
+         */
         releaseMediaPlayer();
     }
 
@@ -143,13 +150,17 @@ public class SonidosActivity extends AppCompatActivity {
     private void releaseMediaPlayer() {
         // If the media player is not null, then it may be currently playing a sound.
         if (mMediaPlayer != null) {
-            // Regardless of the current state of the media player, release its resources
-            // because we no longer need it.
+            /** Regardless of the current state of the media player, release its resources
+            * because we no longer need it
+             * */
             mMediaPlayer.release();
 
-            // Set the media player back to null. For our code, we've decided that
-            // setting the media player to null is an easy way to tell that the media player
-            // is not configured to play an audio file at the moment.
+            /**
+             *Set the media player back to null. For our code, we've decided that
+             * setting the media player to null is an easy way to tell that the media player
+             * is not configured to play an audio file at the moment.
+             */
+
             mMediaPlayer = null;
         }
     }

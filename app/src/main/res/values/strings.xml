@@ -1,53 +1,49 @@
 <resources>
     <string name="app_name">Les Dames de Cerdanyola</string>
     <string name="texto_proyecto">
-El proyecto “El sonido de las vidrieras” se basa en la realización de una intervención/instalación
- sonora en un espacio (sound art), dotando de sonido las imágenes que se encuentran en dicho espacio
-  (site specific). Para esta ocasión se instalaron unos altavoces junto a las vidrieras del museo
-  modernista de Cerdanyola, en Barcelona.\n\n
 
-La propuesta era realizar una actividad inclusiva para todos los públicos,
- en la que los visitantes al acceder a la sala principal del museo, podían poner sonido a las
- vidrieras a través del sonido ambiental.\n\n
-
-Con los sonidos elegidos, se grabó un loop de duración determinada, en el que los diferentes
-elementos de las vidrieras se verían representados o sugeridos. De esta manera, el proyecto pretende
- dar accesibilidad a los diferentes públicos y personas que visiten el museo.\n\n
-
-A partir de aquí, el marco teórico enlaza con la idea del sonido como paisaje, e incluso como
-escultura, ya que son ondas que inundan el espacio físico del museo. Tomando como referente a
-Rosalind Krauss y su texto “La escultura en el campo expandido” (1978), en una instalación sonora,
-el sonido se presenta como una extensión del espacio a través de lo acústico, la espacialidad y su
-dimensionalidad. Como una materia en abstracto que recorre el espacio y como una materia física y
-dimensional. Según los artistas, Janet Cardiff and George Bures Miller “el sonido es un medio físico
- compuesto por ondas, es decir, es igual de físico que una escultura, pero que no puedes ver.”\n\n
-
-El proyecto es exactamente esa dualidad entre lo que se ve/lo que no se ve. El proyecto está abierto
- a todas las personas, con la intención de que diferentes perfiles con deficiencias sensoriales
- distintas puedan acceder de un modo u otro a este espacio del museo. Se trata de democratizar la
- experiencia perceptiva, en el espacio de las vidrieras. A la vez, abre una reflexión sobre los
- diferentes tipos de comunicación y el uso del lenguaje ya sea visual o sonoro. Al fin y al cabo la
- misión inicial de una vidriera era la de informar y contar, a la vez que la de decoración
- arquitectónica y de entrada de luz. La misma luz que conforma la base de la visión y del color.
+El projecte: "El so dels vitralls", es basa en la realització d\'una intervenció / instal·lació
+ sonora en un espai (sound art), dotant de so les imatges que es troben en aquest espai
+  (Site specific). Per a aquesta ocasió s\'han instal·lat uns altaveus al costat dels vitralls
+        del museu modernista de Cerdanyola, a Barcelona.\n\nDita proposta és una
+        activitat inclusiva per a tots els públics, en la qual els visitants poden accedir a la sala
+        principal del museu, escoltant el so dels vitralls.\n\nAmb els sons escollits, s\'ha creat una
+        narració sonora, on els diferents elements dels vitralls es veurien representats o
+        suggerits. D\'aquesta manera, el projecte pretén donar accessibilitat als diferents públics
+        i persones que visitin el museu.\n\nA partir d\'aquí, el marc teòric enllaça amb la idea
+        del so com a paisatge, i fins i tot com a escultura, ja que són ones que inunden l\'espai
+        físic del museu. Prenent com a referent a Rosalind Krauss i el seu text: "L'escultura en el camp expandit" (1978). En una instal·lació sonora, el so es presenta com una extensió de
+        l\'espai a través de l\'acústic, l\'espacialitat i la dimensionalitat. Com una matèria
+        en abstracte que recorre l\'espai i com una matèria física i dimensional.\n\nSegons els artistes,
+        Janet Cardiff i George Bures Miller: "el so és un mitjà físic compost per ones, és a dir, és igual de físic que una escultura, però que no pots veure. "\n\nEl projecte és exactament
+        aquesta dualitat entre el que es veu / el que no es veu. Així doncs, està obert a totes les
+        persones, amb la intenció que diferents perfils amb deficiències sensorials diferents puguin
+        accedir d\'una manera o altre a aquest espai del museu. Es tracta de democratitzar la
+        experiència perceptiva, en l\'espai de les vidrieres.\n\nAl mateix temps, obre una reflexió
+        sobre els diferents tipus de comunicació i l\'ús del llenguatge ja sigui visual o sonor.
+        Al cap i a la fi, la missió inicial d\'un vitrall era la d\'informar, explicar i decoració
+        arquitectònica, aixi com d\'entrada de llum. La mateixa llum que conforma la base de la visió
+        i del color.
  </string>
-    <string name="david_bru_descripcion">A través de sus diferentes proyectos, el interés del
-        artista suele ser el de captar y formalizar, algo tan intagible como es el mundo de las
-        emociones, así como el de examinar temas alrededor de las relaciones humanas, la complejidad
-        y vulnerabilidad de las mismas. Todo ello en relación a diferentes temas autobiográficos o
-        situaciones exprimidas de la vida cotidiana. Su obra suele ser un cruze entre el mundo
-        interior y el exterior. </string>
-    <string name="afons_forrellad_descripcion">Su trabajo quiere reflexionar y denunciar la
-        situación actual del arte y colocarla en el punto de mira. A modo de investigación, escoge
-        una cuestión y experimenta con el grabado, la pintura y la instalación, para observay y
-        escanear los resultados obtenidos. Actualmente, su interés se centra en el estudio de la
-        percecpción de lo visible y lo invisible en el Arte, a través de la incorporación del código
-        Braille en sus obras.</string>
+    <string name="david_bru_descripcion">Artista multidisciplinar, que no creu en que l\'Art hagi de
+        tenir sempre una explicació. En anteriors treballs examina temes al voltant de les relacions
+        humanes, la complexitat
+        i vulnerabilitat de les mateixes. Tot això en relació a diferents temes autobiogràfics o
+        situacions extretes de la vida quotidiana. La seva obra sol ser un encreuament entre el món
+        interior i l\'exterior. </string>
+    <string name="afons_forrellad_descripcion">
+El seu treball vol reflexionar i denunciar la
+        situació actual de l\'art i col·locar-la en el punt de mira. A nivell d\'investigació, tria
+        una qüestió i experimenta amb el gravat, la pintura i la instal·lació, per observar i
+        escanejar els resultats obtinguts. Actualment, el seu interès se centra en l\'estudi de la
+        percepció del que és visible i l\'invisible en l\'Art, a través de la incorporació del codi
+        Braille en les seves obres.</string>
     <string name="vitralls_descripcion">El Tríptic de les Dames de Cerdanyola, estava instal·lat a
         l’antic saló de la casa. Es tracta de tres plafons de grans dimensions (235 x 195 cm) que
-        representen dues escenes. El plafó situat en un dels laterals s\'ha anomenat Dames del
+        representen dues escenes. El plafó situat en un dels laterals s\'ha anomenat: Les dames del
         gronxador. I els dos plafons frontals, que se situen en un mateix escenari interromput pel
-        pilar de la façana, les Dames del llac o Dames dels cignes i les Dames de les tulipes. Al
-        primer les dues figures femenines estan a dalt d\'una barca envoltada de cignes, i al segon,
+        pilar de la façana, les Dames del llac o Dames dels cignes i les Dames de les tulipes.\n\nAl
+        primer, les dues figures femenines estan a dalt d\'una barca envoltada de cignes, i al segon,
         les dames recullen flors a la vora del llac. Tècnicament excel·lents, han estat atribuïts
         per Rodon i Vila-Grau al vitraller alsacià Ludwig Dietrich von Bearn que va tenir taller a
         Barcelona i va destacar en la tècnica de la grisalla.</string>
@@ -55,11 +51,10 @@ El proyecto es exactamente esa dualidad entre lo que se ve/lo que no se ve. El p
         www.alfonsforrellad.com</a></string>
     <string name="davidweb"><a href="http://www.davidbru.com">www.davidbru.com</a></string>
     <string name="link_museu"><a href="http://macerdanyola.wixsite.com/museuartcerdanyola-">
-        link museu</a></string>
+        per més informació: link museu d'Art de Cerdanyola</a></string>
     <string name="davidbru_artist">David Bru</string>
     <string name="alfons_forrellad">Alfons Forrellad</string>
     <string name="Dames_main">El so dels vitralls</string>
-    <string name="llistat_de_sons">Llistat de sons</string>
     <string name="descripcion_del_projecte">Descripció del projecte</string>
     <string name="artistes_bru_forrellad">Artistes: Bru/Forrellad</string>
     <string name="vitralls_page">Sobre els vitralls</string>
@@ -90,4 +85,42 @@ El proyecto es exactamente esa dualidad entre lo que se ve/lo que no se ve. El p
     <string name="swing">swing</string>
     <string name="tormenta">tormenta</string>
     <string name="storm">storm</string>
+    <string name="descripcion_de_las_vidrieras">Descripció dels vitralls</string>
+    <string name="bru_forrellad_el_so_dels_vitralls">El so dels vitralls\n per Bru &amp; Forrellad</string>
+    <string name="Crisantemes">Crisantemes\n per Alexandre de Riquer</string>
+    <string name="sobre_els_artistes"><b>Sobre els artistes</b></string>
+    <string name="poema">\"...Al davant meu s\'estén un ideal de bellesa plàstica; \ngestos divins
+        de nimfes, notes perdudes de vagues melodies, murmuris d\'aigües que s\'escorren a l\'ombra,
+        perfums d\'hidromel i d\'ambrosia.\n\n
+Boscs de sicòmor, thuya i llorers-roses, alzines centenàrides i cedres llevantins: un cel blau, una
+        mar de perpètua bonança, una aigua quieta, amb onades que es fonen en la platja.\n\n
+Les barques, tot gronxant-se, s\'adormisqueixen, munyocs de flors suren damunt de l\'ona com
+        escampall de rica coloraina que, al pas dels cignes, deixant darrere d\'ells l\'estela
+        platejada, es destrien i es bresen...\"</string>
+    <string name="credits">Crèdits:\n\n- Projecte \"El so dels vitralls\”: paisatge narratiu sonor
+        creada per David Bru i Alfons Forrellad. Sonidos con licencia Creative Commons Barcelona. 2018 \n\ndavidbru.contact@gmail.com
+        \nalfons.forrellad@gmail.com\n\n- Descripció del vitralls per Emma
+        Vilarassau i música del mestre Pedro Pardo. Estudi Radio Sant Cugat. 2018\n\n- Àudio Crisantemes
+        d’Alexandre de Riques per Emma Vilarassau. 2018\n\n- Museu d’Art de Cerdanyola (MAC)\n\n- APP creada
+        per David Bru i Alfons Forrellad. 2018\n\nAgraïments:\nDr. Romero Martínez, Stefano Luca di
+        Suonifreschi, Creative Commons, Freesound, Olga Martínez, Carme Marcè, Vanesa Rojas, Maria
+        Alcover, Constanza Bonilla, Maria Eugenia, Mestre Costa i tots els companys del Museu d’Art
+        de Cerdanyola. </string>
+    <string name="descripcio_vitralls">Descripció dels vitralls \"Les Dames de Cerdanyola\":\n\n Veu: Emma
+        Vilarasau.\n Música: Pedro Pardo.</string>
+    <string name="web_museo">wwww.macerdanyola.wixsite.com/museuartcerdanyola-"</string>
+    <string name="web_david">www.davidbru.com</string>
+    <string name="web_alfons">www.alfonsforrellad.com</string>
+    <string name="sobre_els_vitralls">Sobre els vitralls</string>
+    <string name="credits_textView">Crédits</string>
+    <string name="credits_textView_land">Crèdits</string>
+    <string name="credits_text_tab">Crèdits</string>
+    <string name="credits_textview_portrait">Crédits</string>
+    <string name="credits_text_land">Crèdits</string>
+    <string name="credits_text_tab">Crèdits</string>
+    <string name="text_poema_titulo_crisan_port">Extracte del poema Crisantemes de Alexandre de Riquer, 1899.</string>
+    <string name="poema_titulo_crisan_land">Extracte del poema Crisantemes de Alexandre de Riquer, 1899.</string>
+    <string name="text_poema_titulo_crisan_tab">Extracte del poema Crisantemes de Alexandre de Riquer, 1899.</string>
+    <string name="text_sobre_els_artistes">Sobre els artistes</string>
+
 </resources>

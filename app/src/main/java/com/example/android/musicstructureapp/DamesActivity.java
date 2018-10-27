@@ -3,12 +3,11 @@ package com.example.android.musicstructureapp;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.util.Linkify;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.Toast;
+import android.widget.TextView;
 
-import java.util.Set;
 
 public class DamesActivity extends AppCompatActivity {
 
@@ -22,7 +21,8 @@ public class DamesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.reproduccion);
 
-        mMediaPlayer = MediaPlayer.create(this, R.raw.shortsong);
+
+        mMediaPlayer = MediaPlayer.create(this, R.raw.dames_cerdanyola);
 
         //Play the music when the pause button is clicked.
         ImageButton playButton = (ImageButton) findViewById(R.id.play);
@@ -32,7 +32,6 @@ public class DamesActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 mMediaPlayer.start();
-
             }
         });
         //Pause the music when the pause button is clicked.
@@ -43,6 +42,7 @@ public class DamesActivity extends AppCompatActivity {
                 mMediaPlayer.pause();
             }
         });
+
 
     }
 
@@ -73,6 +73,7 @@ public class DamesActivity extends AppCompatActivity {
             mMediaPlayer = null;
         }
     }
+
 }
 
 

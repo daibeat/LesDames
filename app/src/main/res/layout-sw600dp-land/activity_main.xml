@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicstructureapp.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/fondo_portada"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:src="@drawable/portada">
+
+        </ImageView>
+
+        <FrameLayout
+            android:layout_width="@dimen/width_dam_tab"
+            android:layout_height="@dimen/height_dam_tab"
+            android:background="@color/background_dames_main">
+
+            <TextView
+                android:id="@+id/dames"
+                style="@style/MainStyle_land"
+                android:text="@string/bru_forrellad_el_so_dels_vitralls" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/width_son_tab"
+            android:layout_height="@dimen/height_son_tab"
+            android:layout_marginTop="@dimen/margin_son_tab"
+            android:background="@color/background_sonidos_main">
+
+            <TextView
+                android:id="@+id/descripcion"
+                style="@style/MainStyle_land"
+                android:text="@string/descripcion_de_las_vidrieras" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/width_desc_tab"
+            android:layout_height="@dimen/height_desc_tab"
+            android:layout_marginTop="@dimen/margin_desc_tab"
+            android:background="@color/background_descripcion_main">
+
+            <TextView
+                android:id="@+id/crisantemes"
+                style="@style/MainStyle_land"
+                android:text="@string/Crisantemes" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/width_artist_tab"
+            android:layout_height="@dimen/height_artist_tab"
+            android:layout_marginTop="@dimen/margin_artist_tab"
+            android:background="@color/background_artistas_main">
+
+            <TextView
+                android:id="@+id/vidrieras"
+                style="@style/MainStyle_land"
+                android:text="@string/sobre_els_vitralls"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/width_vid_tab"
+            android:layout_height="@dimen/height_vid_tab"
+            android:layout_marginTop="@dimen/margin_vid_tab"
+            android:background="@color/background_vitralls_main">
+
+            <TextView
+                android:id="@+id/credits"
+                style="@style/MainStyle_land"
+                android:text="@string/credits_text_tab"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/width_logo_tab"
+            android:layout_height="@dimen/height_logo_tab"
+            android:layout_marginTop="@dimen/margin_logo_tab"
+            android:background="@color/logo_main_tab">
+            <ImageView
+                android:layout_width="@dimen/width_logo_img_tab"
+                android:layout_height="@dimen/height_logo_img_tab"
+                android:src="@drawable/logo" />
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

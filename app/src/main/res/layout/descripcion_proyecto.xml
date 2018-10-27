@@ -1,30 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@android:color/white">
+    android:layout_height="match_parent"
+    android:background="@color/background_descrip_port">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
-        <FrameLayout
+        <ImageView
+            android:id="@+id/reproduccion"
+            android:layout_width="@dimen/width_img_descrip_port"
+            android:layout_height="@dimen/height_img_descrip_port"
+            android:paddingBottom="@dimen/padding_img_descrip_port"
+            android:layout_marginLeft="@dimen/marginL_img_descrip_port"
+            android:layout_marginTop="@dimen/marginT_img_descrip_port"
+            android:src="@drawable/dames_desc" />
+
+        <ImageButton
+            android:id="@+id/play"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_frame_desc_page">
+            android:layout_marginLeft="@dimen/marginL_play_descrip_port"
+            android:layout_marginTop="@dimen/marginT_play_descrip_port"
+            android:background="@color/background_play_repro"
+            android:src="@drawable/ic_play_circle_filled_white_24dp" />
 
-            <TextView
-                android:id="@+id/texto_1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/background_textdesc_page"
-                android:padding="@dimen/padding_textdesc_page"
-                android:text="@string/texto_proyecto"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/textSize_textdesc_page" />
-        </FrameLayout>
+        <ImageButton
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginL_pause_descrip_port"
+            android:layout_marginTop="@dimen/marginT_pause_descrip_port"
+            android:background="@color/background__pause_repro"
+            android:src="@drawable/ic_pause_circle_filled_white_24dp_2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/marginL_text_descrip_port"
+            android:layout_marginRight="@dimen/marginR_text_descrip_port"
+            android:layout_below="@+id/reproduccion"
+            android:text="@string/descripcio_vitralls"
+            android:textColor="@color/textColor_text_descrip_port"
+            android:textSize="@dimen/textSize_text_descrip_port" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
 </ScrollView>

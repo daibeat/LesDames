@@ -12,64 +12,77 @@
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/height_dames_portrait"
             android:background="@color/background_dames_main">
 
             <TextView
                 android:id="@+id/dames"
-                android:text="@string/Dames_main"
+                android:text="@string/bru_forrellad_el_so_dels_vitralls"
                 style="@style/MainStyle"/>
         </FrameLayout>
 
+
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/height_sonidos_portrait"
             android:background="@color/background_sonidos_main">
 
             <TextView
-                android:id="@+id/listado_sonidos"
-                android:text="@string/llistat_de_sons"
+                android:id="@+id/descripcion"
+                android:text="@string/descripcion_de_las_vidrieras"
                 style="@style/MainStyle"/>
         </FrameLayout>
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/height_descripcion_portrait"
             android:background="@color/background_descripcion_main">
 
             <TextView
-                android:id="@+id/proyecto"
-                android:text="@string/descripcion_del_projecte"
+                android:id="@+id/crisantemes"
+                android:text="@string/Crisantemes"
                 style="@style/MainStyle"/>
         </FrameLayout>
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/height_artistas_portrait"
             android:background="@color/background_artistas_main">
 
             <TextView
-                android:id="@+id/bruforrellad"
-                android:text="@string/artistes_bru_forrellad"
+                android:id="@+id/vidrieras"
+                android:text="@string/sobre_els_vitralls"
                 style="@style/MainStyle"/>
         </FrameLayout>
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/height_vitralls_portrait"
             android:background="@color/background_vitralls_main">
 
             <TextView
-                android:id="@+id/vidrieras"
-                android:text="Sobre els vitralls"
+                android:id="@+id/credits"
+                android:text="@string/credits_textview_portrait"
                 style="@style/MainStyle"/>
         </FrameLayout>
 
+
         <ImageView
-            android:id="@+id/detalle"
+            android:id="@+id/fondo_portada"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:adjustViewBounds="true"
-            android:src="@drawable/detalle" />
+            android:src="@drawable/detalle_mdpi" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_logo_portrait"
+            android:background="@color/logo_main">
+            <ImageView
+                android:layout_width="@dimen/width_logo_portrait"
+                android:layout_height="@dimen/height_logo_image_portrait"
+                android:src="@drawable/logo" />
+
+        </FrameLayout>
     </LinearLayout>
 </ScrollView>

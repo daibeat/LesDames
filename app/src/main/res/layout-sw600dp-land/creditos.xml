@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_credit_tab">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/reproduccion"
+            android:layout_width="@dimen/width_img_credit_tab"
+            android:layout_height="@dimen/height_img_credit_tab"
+            android:paddingBottom="@dimen/paddingB_img_credit_tab"
+            android:layout_marginTop="@dimen/marginT_img_credit_tab"
+            android:src="@drawable/mac" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/textSize_credit_tab"
+            android:layout_marginBottom="@dimen/marginB_text_credit_tab"
+            android:layout_marginTop="@dimen/marginT_text_credit_tab"
+            android:layout_marginLeft="@dimen/marginL_text_credit_tab"
+            android:layout_marginRight="@dimen/marginR_text_credit_tab"
+            android:layout_toRightOf="@+id/reproduccion"
+            android:text="@string/credits"
+            android:lineSpacingExtra="3dp"
+            android:textColor="@color/textColor_text_credit_tab"/>
+    </RelativeLayout>
+
+</ScrollView>

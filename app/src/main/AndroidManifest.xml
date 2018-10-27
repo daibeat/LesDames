@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.musicstructureapp">
 
     <application
@@ -10,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,48 +18,56 @@
             </intent-filter>
         </activity>
         <activity
-        android:name=".DamesActivity"
-        android:label="Les Dames de Cerdanyola"
-        android:parentActivityName=".MainActivity">
-        <!-- Parent activity meta-data to support 4.0 and lower -->
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity"/>
-    </activity>
+            android:name=".DamesActivity"
+            android:label="El so dels vitralls"
+            android:parentActivityName=".MainActivity"
+            >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
 
-    <activity android:name=".SonidosActivity"
-            android:label="Llistat de sons"
-            android:parentActivityName=".MainActivity">
+        <activity
+            android:name=".ProyectoActivity"
+            android:label="Descripció dels vitralls"
+            android:parentActivityName=".MainActivity"
+            >
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
+                android:value=".MainActivity" />
         </activity>
-        <activity android:name=".ProyectoActivity"
-            android:label="Descripció del projecte"
-            android:parentActivityName=".MainActivity">
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
-        </activity>
-        <activity android:name=".ArtistsActivity"
-            android:label="Artistes"
-            android:parentActivityName=".MainActivity">
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
-        </activity>
-        <activity android:name=".VidrierasActivity"
+        <activity
+            android:name=".VidrierasActivity"
             android:label="Sobre els vitralls"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity"
+            >
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
+                android:value=".MainActivity" />
         </activity>
-
+        <activity
+            android:name=".CrisantemesActivity"
+            android:label="Crisantemes"
+            android:parentActivityName=".MainActivity"
+          >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".CreditosActivity"
+            android:label="Crèdits"
+            android:parentActivityName=".MainActivity"
+    >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
     </application>
 
 </manifest>

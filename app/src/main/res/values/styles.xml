@@ -5,7 +5,7 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">#153016</item>
         <item name="colorPrimaryDark">#153016</item>
-        <item name="colorAccent">#153016</item>
+        <item name="colorAccent">#FFFFFF</item>
         <item name="android:fontFamily">sans-serif-light</item>
 
 
@@ -17,10 +17,19 @@
         <item name= "android:layout_width">match_parent</item>
         <item name= "android:layout_height">wrap_content</item>
         <item name= "android:background"> ?android:attr/selectableItemBackground</item>
-        <item name= "android:gravity">center_vertical</item>
         <item name= "android:padding">@dimen/padding_vitralls_main</item>
         <item name= "android:textColor">@android:color/white</item>
         <item name= "android:textSize">@dimen/textSize_vitralls_main</item>
+
+    </style>
+
+    <style name="MainStyle_land">
+        <item name= "android:layout_width">match_parent</item>
+        <item name= "android:layout_height">wrap_content</item>
+        <item name= "android:background"> ?android:attr/selectableItemBackground</item>
+        <item name= "android:padding">@dimen/padding_vitralls_main</item>
+        <item name= "android:textColor">@android:color/white</item>
+        <item name= "android:textSize">15sp</item>
 
     </style>
 </resources>

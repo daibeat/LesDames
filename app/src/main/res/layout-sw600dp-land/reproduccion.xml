@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color_reprod_tab">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/reproduccion"
+            android:layout_width="@dimen/width_img_reprod_tab"
+            android:layout_height="@dimen/height_img_reprod_tab"
+            android:padding="@dimen/padding_img_reprod_tab"
+            android:src="@drawable/dames_rep" />
+
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginL_play_reprod_tab"
+            android:layout_marginTop="@dimen/marginT_play_reprod_tab"
+            android:background="@color/background_play_repro"
+            android:src="@drawable/ic_play_circle_filled_white_24dp" />
+
+        <TextView
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tracking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginL_pause_reprod_tab"
+            android:layout_marginTop="@dimen/marginT_pause_reprod_tab"
+            android:background="@color/background__pause_repro"
+            android:src="@drawable/ic_pause_circle_filled_white_24dp_2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginL_text_reprod_tab"
+            android:layout_marginTop="@dimen/marginT_text_reprod_tab"
+            android:lineSpacingExtra="@dimen/lineSpace_text_reprod_tab"
+            android:padding="@dimen/padding_text_reprod_tab"
+            android:text="@string/texto_proyecto"
+            android:textColor="@color/textColor_text_reprod_tab"
+            android:textSize="@dimen/textSize_text_reprod_tab" />
+
+        <TextView
+            android:id="@+id/sobre_los_artistas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reproduccion"
+            android:layout_marginLeft="@dimen/marginL_sobre_artistes_reprod_tab"
+            android:layout_marginTop="@dimen/marginT_sobre_artistes_reprod_tab"
+            android:background="@color/background_sobre_artistes_reprod_tab"
+            android:padding="@dimen/padding_sobre_artistes_reprod_tab"
+            android:text="@string/sobre_els_artistes"
+            android:textColor="@color/textColor_sobre_artistes_reprod_tab"
+            android:textSize="@dimen/textSize_sobre_artistes_reprod_tab" />
+
+        <LinearLayout
+            android:layout_width="@dimen/width_sobre_reprod_tab"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sobre_los_artistas"
+            android:layout_margin="@dimen/margin_sobre_reprod_tab"
+            android:background="@color/background_sobre_reprod_tab"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/david"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginL_david_reprod_tab"
+                android:background="@color/background_david_reprod_tab"
+                android:paddingTop="@dimen/padding_text_davidArtist"
+                android:text="@string/davidbru_artist"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize_david_reprod_tab" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/david_frame_artist">
+
+                <TextView
+                    android:id="@+id/texto_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/lineSpace_texto1_reprod_tab"
+                    android:paddingLeft="@dimen/padding_davidText"
+                    android:text="@string/david_bru_descripcion"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textSize_texto1_reprod_tab" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/web_david"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/padding_davidweb"
+                android:text="@string/davidweb"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize_davidWeb"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/alfons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginL_text_alfons_reprod_tab"
+                android:background="@color/background_text_alfons_reprod_tab"
+                android:paddingTop="@dimen/padding_alfons"
+                android:text="@string/alfons_forrellad"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize_text_alfons_reprod_tab" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/frame_alfonsArtist">
+
+                <TextView
+                    android:id="@+id/texto_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/lineSpace_texto2_reprod_tab"
+                    android:paddingLeft="@dimen/padding_alfonsDescription"
+                    android:text="@string/afons_forrellad_descripcion"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textSize_texto2_reprod_tab" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/web_alfons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/padding_alfonsWeb"
+                android:text="@string/alfonsweb"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize_alfonsWeb"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

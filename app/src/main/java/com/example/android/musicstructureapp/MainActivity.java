@@ -1,6 +1,7 @@
 package com.example.android.musicstructureapp;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         // Find the View that shows the dames category
         TextView dames = (TextView) findViewById(R.id.dames);
@@ -32,28 +34,11 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        // Find the View that shows the sonidos category
-        TextView sonidos = (TextView) findViewById(R.id.listado_sonidos);
-
-        // Set a click listener on that View
-        sonidos.setOnClickListener(new View.OnClickListener() {
-
-            // The code in this method will be executed when the sonidos View is clicked on.
-            @Override
-            public void onClick(View view) {
-                Intent sonidosIntent = new Intent(MainActivity.this,
-                        SonidosActivity.class);
-
-                // Start the new activity
-                startActivity(sonidosIntent);
-            }
-        });
-
         // Find the View that shows the proyecto category
-        TextView proyecto = (TextView) findViewById(R.id.proyecto);
+        TextView descripcion = (TextView) findViewById(R.id.descripcion);
 
         // Set a click listener on that View
-        proyecto.setOnClickListener(new View.OnClickListener() {
+        descripcion.setOnClickListener(new View.OnClickListener() {
 
             // The code in this method will be executed when the proyecto View is clicked on.
             @Override
@@ -66,20 +51,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Find the View that shows the bruforrellad category
-        TextView bruforrellad = (TextView) findViewById(R.id.bruforrellad);
+        // Find the View that shows the proyecto category
+        TextView crisantemes = (TextView) findViewById(R.id.crisantemes);
 
         // Set a click listener on that View
-        bruforrellad.setOnClickListener(new View.OnClickListener() {
+        crisantemes.setOnClickListener(new View.OnClickListener() {
 
-            // The code in this method will be executed when the artistas View is clicked on.
+            // The code in this method will be executed when the proyecto View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent bruforrelladIntent = new Intent(MainActivity.this,
-                        ArtistsActivity.class);
+                Intent proyectoIntent = new Intent(MainActivity.this,
+                        CrisantemesActivity.class);
 
                 // Start the new activity
-                startActivity(bruforrelladIntent);
+                startActivity(proyectoIntent);
             }
         });
 
@@ -99,6 +84,24 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(vidrierasIntent);
             }
         });
+
+        // Find the View that shows the bruforrellad category
+        TextView creditos = (TextView) findViewById(R.id.credits);
+
+        // Set a click listener on that View
+        creditos.setOnClickListener(new View.OnClickListener() {
+
+            // The code in this method will be executed when the artistas View is clicked on.
+            @Override
+            public void onClick(View view) {
+                Intent bruforrelladIntent = new Intent(MainActivity.this,
+                        CreditosActivity.class);
+
+                // Start the new activity
+                startActivity(bruforrelladIntent);
+            }
+        });
+
 
     }
 }

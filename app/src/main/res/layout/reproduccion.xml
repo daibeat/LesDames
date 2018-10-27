@@ -1,21 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color_reprod_port">
+
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:adjustViewBounds="true"
-        android:scaleType="fitXY"
-        android:src="@drawable/detalle_reproduccion" />
+        android:id="@+id/reproduccion"
+        android:layout_width="@dimen/width_img_reprod_port"
+        android:layout_height="@dimen/height_img_reprod_port"
+        android:layout_marginLeft="@dimen/marginL_img_reprod_port"
+        android:padding="@dimen/padding_img_reprod_port"
+        android:src="@drawable/dames_rep" />
+
+    <TextView
+        android:id="@+id/texto_proyecto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_proyecto"
+        android:layout_below="@+id/reproduccion"
+        android:padding="@dimen/padding_text_proyecto_reprod_port"
+        android:textColor="@color/textColor_text_proyecto_reprod_port"
+        android:textSize="@dimen/textSize_text_proyecto_reprod_port"/>
 
     <ImageButton
         android:id="@+id/play"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/marginLeft_play_repro"
-        android:layout_marginTop="@dimen/marginTop_play_repro"
+        android:layout_marginLeft="@dimen/marginL_play_reprod_port"
+        android:layout_marginTop="@dimen/marginT_play_reprod_port"
         android:background="@color/background_play_repro"
         android:src="@drawable/ic_play_circle_filled_white_24dp" />
 
@@ -23,9 +38,111 @@
         android:id="@+id/pause"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/marginLeft_pause_repro"
-        android:layout_marginTop="@dimen/marginTop_pause_repro"
+        android:layout_marginLeft="@dimen/marginL_pause_reprod_port"
+        android:layout_marginTop="@dimen/marginT_pause_reprod_port"
         android:background="@color/background__pause_repro"
-        android:src="@drawable/ic_pause_circle_filled_white_24dp" />
+        android:src="@drawable/ic_pause_circle_filled_white_24dp_2" />
+
+
+
+    <TextView
+        android:id="@+id/sobre_los_artistas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texto_proyecto"
+        android:layout_marginLeft="@dimen/marginL_text_sobre_reprod_port"
+        android:padding="@dimen/padding_text_sobre_reprod_port"
+        android:text="@string/text_sobre_els_artistes"
+        android:textColor="@color/textColor_tex_sobre_reprod_port"
+        android:background="@color/background_text_sobre_reprod_port"
+        android:textSize="@dimen/textSize_text_sobre_reprod_port" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sobre_los_artistas"
+        android:orientation="vertical"
+        android:background="@color/background_artistas_reprod_port"
+        android:padding="@dimen/padding_artistas_reprod_port">
+
+        <TextView
+            android:id="@+id/david"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginL_text_david_reprod_port"
+            android:background="@color/background_text_david_reprod_port"
+            android:paddingTop="@dimen/padding_text_davidArtist"
+            android:text="@string/davidbru_artist"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSize_text_david_reprod_port" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/david_frame_artist">
+
+            <TextView
+                android:id="@+id/texto_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/lineSpace_texto1_reprod_port"
+                android:paddingLeft="@dimen/padding_davidText"
+                android:text="@string/david_bru_descripcion"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize_texto1_reprod_port" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/web_david"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="@dimen/padding_davidweb"
+            android:text="@string/davidweb"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSize_davidWeb"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/alfons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginL_text_alfons_reprod_port"
+            android:background="@color/background_text_alfons_reprod_port"
+            android:paddingTop="@dimen/padding_text_alfons_reprod_port"
+            android:text="@string/alfons_forrellad"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSize_text_alfons_reprod_port" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/frame_alfonsArtist">
+
+            <TextView
+                android:id="@+id/texto_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/lineSpace_text2_reprod_port"
+                android:paddingLeft="@dimen/padding_alfonsDescription"
+                android:text="@string/afons_forrellad_descripcion"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize_text2_reprod_port" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/web_alfons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="@dimen/padding_alfonsWeb"
+            android:text="@string/alfonsweb"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSize_alfonsWeb"
+            android:textStyle="bold" />
+    </LinearLayout>
 
 </RelativeLayout>
+
+</ScrollView>
